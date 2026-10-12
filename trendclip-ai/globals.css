@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body { background: radial-gradient(1200px 600px at 20% -10%, #2a1f5c55, transparent), #0b0b0f; color: #fff; }
+.glass { background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.1); backdrop-filter: blur(14px); border-radius: 1.25rem; }
+.btn { background: linear-gradient(90deg,#7c5cff,#3b82f6); border-radius: .9rem; padding: .7rem 1.2rem; font-weight: 600; transition: transform .15s, opacity .15s; }
+.btn:hover { transform: translateY(-1px); }
+.btn:disabled { opacity: .4; cursor: not-allowed; transform: none; }
+
+:root { --a1: #7c5cff; --a2: #3b82f6; }
+[data-theme="ocean"] { --a1: #06b6d4; --a2: #3b82f6; }
+[data-theme="sunset"] { --a1: #f97316; --a2: #ec4899; }
+[data-theme="emerald"] { --a1: #10b981; --a2: #06b6d4; }
+.btn { background: linear-gradient(90deg, var(--a1), var(--a2)); }

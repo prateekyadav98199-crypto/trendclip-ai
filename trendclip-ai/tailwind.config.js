@@ -1,5 +1,5 @@
 module.exports = {
   content: ["./app/**/*.{js,jsx}"],
-  theme: { extend: { colors: { accent: "#7c5cff", accent2: "#3b82f6" } } },
+  theme: { extend: { colors: { accent: "var(--a1)", accent2: "var(--a2)" } } },
   plugins: [],
 };
